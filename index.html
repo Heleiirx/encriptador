@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="assets/icons/encriptado.png">
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        <div class="columns">
+            <div class="row left-row">
+                <div class="row">
+                    <a href="">
+                        <img src="assets/icons/Logo.png" class="logo">
+                    </a>
+                    <textarea rows="11" class="input" id="inputEncriptar" onkeyup="toLower()" placeholder="Escribe algo aquí "></textarea>
+                    <div class="row advertencia">
+                        <img id="vector" src="assets/icons/Vector.png">
+                        <p class="letrasPequeñas"> Solo letras minusculas y sin acentos</p>
+                    </div>
+                    <div class="button1">
+                        <button type="button" id="boton-encriptar" onclick="encriptar()"> Encriptar </button>
+                        <button type"button" id="boton-desencriptar" onclick="desencriptar()"> Desencriptar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row right-row" id="recuadroBlanco">
+                <div class="row" id="monoInicio">
+                    <img id="muñeco" src="assets/images/Muñeco.png" >
+                    <p class="aviso"> Ningún mensaje fue encontrado </p>
+                    <textarea rows="3" class="letrasPequeñas" placeholder="Ingresa el texto que deseas encriptar"></textarea>
+                </div>
+                <button type"button" id="boton-copiar" onclick="copy()"> Copiar </button>
+            </div>
+        </div>
+
+        <!-- -------------------------------------- Comienza el MODAL --------------------------------------------- -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/icons/lista-del-portapapeles.png" id="portapapel">
+                <p>Tu texto ha sido copiado al portapapeles</p>
+            </div>
+        </div>
+        <!-- -------------------------------------- Termina el MODAL --------------------------------------------- -->
+        </div>
+    </body>
+    
+    <footer>
+        <p class="letrasPequeñas footer">This page was made by: Itzel Romero Vargas </p>
+        <div class="row footer">
+            <a href="https://github.com/Heleiirx">
+                <img class="rs" src="assets/icons/github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/itzel-romero/">
+                <img class="rs" src="assets/icons/linkedin.png">
+            </a>
+            <a href="https://instagram.com/iitzel.rv?igshid=ZDdkNTZiNTM=">
+                <img class="rs" src="assets/icons/instagram.png">
+            </a>
+        </div>
+    </footer>
+</html>
