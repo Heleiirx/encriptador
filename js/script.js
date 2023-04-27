@@ -106,7 +106,7 @@ function desencriptar() {
 
 function toLower() {
     let txtInput = document.getElementById("inputEncriptar").value;
-    document.getElementById("inputEncriptar").value = txtInput.replace(/[^a-z]/,'');
+    document.getElementById("inputEncriptar").value = txtInput.replace(/[^a-z ]/,'');
 }
 
 // this.value = this.value.replace(/[^a-zA-Z0-9]/,'')
