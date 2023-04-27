@@ -37,7 +37,7 @@ button{
     position: relative;
     display: grid;
     width: 100%;
-    /* padding-bottom: 10px; */
+    padding-bottom: 20px;
     justify-content: center;
     column-gap: 10px;
     grid-auto-flow: column;
