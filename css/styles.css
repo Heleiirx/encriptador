@@ -37,7 +37,7 @@ button{
     position: relative;
     display: grid;
     width: 100%;
-    padding-bottom: 65px;
+    /* padding-bottom: 10px; */
     justify-content: center;
     column-gap: 10px;
     grid-auto-flow: column;
@@ -126,7 +126,7 @@ textarea.letrasPequeñas{
 }
 #boton-copiar{
     align-self: center;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 5%;
     background-color: transparent;
     width: 80%;
